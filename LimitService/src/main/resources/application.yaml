@@ -1,0 +1,15 @@
+server:
+  port: 1071
+
+
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8888"
+
+  application:
+    name: limits-service
+
+
+limit-service:
+  minimum: 1
+  maximum: 999
