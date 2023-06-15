@@ -10,6 +10,9 @@
     <module>LimitService</module>
     <module>SpringCloudConfigServer</module>
     <module>CurrencyExchangeService</module>
+    <module>CurrencyConvertionService</module>
+      <module>DiscoveryServer</module>
+    <module>ApiGateway</module>
   </modules>
 
   <distributionManagement>
