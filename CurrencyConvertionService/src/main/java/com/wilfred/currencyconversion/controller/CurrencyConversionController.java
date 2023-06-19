@@ -16,7 +16,7 @@ public class CurrencyConversionController {
     @Autowired
     CurrencyConversionProxy currencyConversionProxy;
 
-    @GetMapping("/currency-conversion-feign/from/{from}/to{to}/quantity/{quantity}")
+    @GetMapping("/currency-conversion-feign/from/{from}/to/{to}/quantity/{quantity}")
     public CurrencyConversion calculateCurrencyConversionFeign(@PathVariable String from,
                                                                @PathVariable String to,
                                                                @PathVariable BigDecimal quantity) {

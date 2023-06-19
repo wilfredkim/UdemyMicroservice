@@ -9,6 +9,6 @@ import java.math.BigDecimal;
 
 @FeignClient(name = "currency-exchange-service")
 public interface CurrencyConversionProxy {
-    @GetMapping("/convert/{from}/{to}/{spotRate}")
+    @GetMapping("/api/v1/currencyconverter/convert/{from}/{to}/{spotRate}")
     CurrencyConversion convert(@PathVariable String from, @PathVariable String to, @PathVariable BigDecimal spotRate);
 }
