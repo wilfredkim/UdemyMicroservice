@@ -27,11 +27,19 @@ resilience4j:
   ratelimiter:
     instances:
       defaultLimiter:
-       limit-for-period: 2
-       limit-refresh-period: 10s
+        limit-for-period: 2
+        limit-refresh-period: 10s
   bulkhead:
     instances:
       defaultLimiter:
         max-concurrent-calls: 10
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+#logging:
+ # pattern:
+ #   level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
 
